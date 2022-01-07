@@ -1,6 +1,6 @@
 <template>
   	<q-page class="contain--wide">
-		<div class="bg-indigo-1" >
+		<!-- <div class="bg-indigo-1" >
 			<section>
 				<div class="text-h5 text-bold">Plans</div>
 
@@ -13,13 +13,13 @@
 				</div>
 
 			</section>
-		</div>
+		</div> -->
 
 		<section>
 			<div class="text-h5 text-bold">Compare plans</div>
 			<div class="text-body2">Please note ... Lorem ipsum dolor</div>
 
-			<plan-expand :plans="plans" />
+			<plan-expand />
 
 		</section>
 
@@ -41,7 +41,6 @@ export default {
 		PlanCard,
 		PlanExpand,
 	},
-  	name: 'Pricing'
 }
 </script>
 
@@ -53,5 +52,4 @@ export default {
 		padding: 100px 12px;
 	}
 }
-
 </style>

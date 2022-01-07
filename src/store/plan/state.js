@@ -1,7 +1,64 @@
 export default function () {
   return {
+	featureGroups: [
+		{
+			title: 'Cap table management',
+			features: [
+				{
+					title: 'Digital cap table',
+					full: [ 1, 3 ],
+				}, {
+					title: 'Share certificates',
+					full: [ 2, 3 ],
+				},{
+					title: 'Lorem ipsum dolor sit amet',
+					full: [ 2, 3 ],
+				}, {
+					title: 'Share class setup',
+					full: [ 3 ],
+					half: [
+						{ planId: 1,	label: 'Hi, im text', }
+					],
+				},{
+					title: 'Lorem ipsum dolor sit amet',
+					full: [ 1, 2 ],
+				},{
+					title: 'Lorem ipsum dolor sit amet',
+					full: [ 1, 2 ],
+				}
+			]
+		}, {
+			title: 'Lorem ipsum dolor',
+			features: [
+				{
+					title: 'Digital cap table',
+					full: [ 1, 3 ],
+				},{
+					title: 'Lorem ipsum dolor sit amet',
+					full: [ 1, 2, 2 ],
+				},{
+					title: 'Lorem ipsum dolor sit amet',
+					full: [ 2 ],
+				},{
+					title: 'Lorem ipsum dolor sit amet',
+					full: [ 2, 3 ],
+				},{
+					title: 'Hire Ellis',
+					full: [ 1 ],
+					half: [
+						{ planId: 2,	label: 'Hi, im text', },
+						{ planId: 3,	label: 'Hi', },
+					],
+				},{
+					title: 'Lorem ipsum dolor sit amet',
+					full: [ 1 ],
+				}
+			],
+		}
+	]
+	,
     plans: [{
-		id: 0,
+		planId: 1,
 		title: 'Start',
 		icon: '',
 		tailorPrice: false,				
@@ -21,7 +78,7 @@ export default function () {
 			'Lorem ipsum dolor5',
 		]
 	},	{
-		id: 0,
+		planId: 2,
 		title: 'Grow',
 		icon: '',
 		tailorPrice: false,				
@@ -40,7 +97,7 @@ export default function () {
 		]
 	},
 	{
-		id: 0,
+		planId: 3,
 		title: 'Start',
 		icon: '',
 		tailorPrice: true,

@@ -8,37 +8,50 @@
 			</tr>
 		</table>
 
-		<q-expansion-item
-			expand-separator
-			icon="perm_identity"
-			label="Account settings"
-		>
-			<q-card>
-				<table>
-					<tr>
-						<td>Sample text</td>
-						<td><i class="fa fa-remove"></i></td>
-						<td><i class="fa fa-check"></i></td>
-					</tr>
-					<tr>
-						<td>Sample text</td>
-						<td><i class="fa fa-check"></i></td>
-						<td><i class="fa fa-check"></i></td>
-					</tr>
-				</table>
-			</q-card>
-		</q-expansion-item>
-		
+		<div v-for="group in featureGroups">
+			<q-expansion-item
+				expand-separator
+				:label="group.title"
+				>
+				<q-card>
+					<table>
+						<tr v-for="feature in group.features">
+							<td>{{ feature.title }}</td>
+	
+							<td>
+								<q-icon v-if="feature.full.includes(1)" name="font_download" />
+								
+								<div v-else-if="feature.half">
+									Text field
+								</div>
+							</td>
+
+
+						</tr>
+					</table>
+				</q-card>
+			</q-expansion-item>
+		</div>
+
 	</q-list>
 </template>
 
 <script>
+// state
+import { mapState } from 'vuex'
+
 export default {
-	props: {
-		plans: Array,
+	computed: {
+		... mapState( 'plan', [ 'featureGroups' ]),
+	},
+	methods: {
+		label(feature, planId) {
+			feature.half.find( label => label.id == planId )
+		}
 	}
 }
 </script>
+
 
 <style>
 table {
