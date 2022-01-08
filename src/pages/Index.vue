@@ -1,6 +1,6 @@
 <template>
   	<q-page class="contain--wide">
-		<!-- <div class="bg-indigo-1" >
+		<div class="bg-indigo-1" >
 			<section>
 				<div class="text-h5 text-bold">Plans</div>
 
@@ -13,12 +13,13 @@
 				</div>
 
 			</section>
-		</div> -->
+		</div>
 
 		<section>
 			<div class="text-h5 text-bold">Compare plans</div>
+			<br>
 			<div class="text-body2">Please note ... Lorem ipsum dolor</div>
-
+			<br>
 			<plan-expand />
 
 		</section>

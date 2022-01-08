@@ -7,24 +7,28 @@ export default function () {
 				{
 					title: 'Digital cap table',
 					full: [ 1, 3 ],
+					half: [],
 				}, {
 					title: 'Share certificates',
 					full: [ 2, 3 ],
+					half: [], 
 				},{
 					title: 'Lorem ipsum dolor sit amet',
 					full: [ 2, 3 ],
+					half: [],
 				}, {
 					title: 'Share class setup',
 					full: [ 3 ],
-					half: [
-						{ planId: 1,	label: 'Hi, im text', }
-					],
+					half: [ 2 ],
+					label: 'No fully included ',
 				},{
 					title: 'Lorem ipsum dolor sit amet',
 					full: [ 1, 2 ],
+					half: [],
 				},{
 					title: 'Lorem ipsum dolor sit amet',
 					full: [ 1, 2 ],
+					half: [],
 				}
 			]
 		}, {
@@ -33,25 +37,28 @@ export default function () {
 				{
 					title: 'Digital cap table',
 					full: [ 1, 3 ],
+					half: [],
 				},{
 					title: 'Lorem ipsum dolor sit amet',
 					full: [ 1, 2, 2 ],
+					half: [],
 				},{
 					title: 'Lorem ipsum dolor sit amet',
 					full: [ 2 ],
+					half: [],
 				},{
 					title: 'Lorem ipsum dolor sit amet',
 					full: [ 2, 3 ],
+					half: [],
 				},{
 					title: 'Hire Ellis',
-					full: [ 1 ],
-					half: [
-						{ planId: 2,	label: 'Hi, im text', },
-						{ planId: 3,	label: 'Hi', },
-					],
+					full: [ 2 ],
+					half: [ 1 ],
+					label: 'Hi, im text',
 				},{
 					title: 'Lorem ipsum dolor sit amet',
 					full: [ 1 ],
+					half: [],
 				}
 			],
 		}
@@ -60,7 +67,7 @@ export default function () {
     plans: [{
 		planId: 1,
 		title: 'Start',
-		icon: '',
+		icon: 'grade',
 		tailorPrice: false,				
 		startPrice: {
 			monthly: 50,
@@ -80,7 +87,7 @@ export default function () {
 	},	{
 		planId: 2,
 		title: 'Grow',
-		icon: '',
+		icon: 'lightbulb',
 		tailorPrice: false,				
 		startPrice: {
 			monthly: 95,
@@ -99,7 +106,7 @@ export default function () {
 	{
 		planId: 3,
 		title: 'Start',
-		icon: '',
+		icon: 'work',
 		tailorPrice: true,
 		features: [
 			'Lorem ipsum dolor',

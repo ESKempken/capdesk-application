@@ -2,7 +2,7 @@
 	<div>
 		<q-card class="planCard_card text-primary">
 			<q-card-section class="planCard_card--header row justify-center items-center">
-				<q-icon color="primary" name="bluetooth" size="2em" class="q-mr-sm"/>
+				<q-icon color="primary" :name="plan.icon" size="2em" class="q-mr-sm"/>
 				<div class="text-h5 text-bold">{{ plan.title }}</div>
 			</q-card-section>
 
