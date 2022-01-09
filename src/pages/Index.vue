@@ -1,5 +1,5 @@
 <template>
-  	<q-page class="contain--wide">
+  	<q-page class="contain--wide text-primary">
 		<div class="bg-indigo-1" >
 			<section>
 				<div class="text-h5 text-bold">Plans</div>
