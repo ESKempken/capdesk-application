@@ -4,15 +4,10 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', name:'pricing', component: () => import('pages/Index.vue') }
+		{ path: 'audit', name:'audit', component: () => import('src/pages/TaskOne.vue') },
+		{ path: 'pricing', name:'pricing', component: () => import('src/pages/TaskTwo.vue') },
+		{ path: 'blog', name:'blog', component: () => import('src/pages/TaskThree.vue') },
     ]
-  },
-
-  // Always leave this as last one,
-  // but you can also remove it
-  {
-    path: '/:catchAll(.*)*',
-    component: () => import('pages/Error404.vue')
   }
 ]
 
